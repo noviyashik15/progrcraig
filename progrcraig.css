@@ -45,3 +45,11 @@ text-indent: 30px;
     /* transition: height .4s ease-in-out; */
 }
 
+.autoprknp{
+padding: 10px;
+color: blue;
+cursor: pointer;
+border: 3px solid gray;
+border-radius: 1rem;
+margin-bottom: .5rem;
+}
