@@ -1,3 +1,4 @@
+@font-face { font-family: "Czizh"; src: url("prokr/Czizh.ttf") format("truetype"); font-style: normal; font-weight: normal; }
 *{ margin: 0; padding: 0; }
 body{ padding-left: .5%; padding-right: 1%;
 background: linear-gradient(90deg, rgb(222, 237, 185), rgb(156, 152, 203));
@@ -11,17 +12,20 @@ h2{text-align: center; margin-top: 3rem; margin-bottom: 4rem;
     color: #260c68; }
 h2:hover{ color: red;}
 
-.podgrpc{font-size: x-large;
-text-align: center;    
-/* line-height: 1.5;
-text-indent: 30px;
-letter-spacing: 2.7px;
-padding-right: 2.4rem; */
+.podgrpc{
+font-size: 1.6rem;
+font-weight: bold;
+text-align: center;
+font-family: "Czizh"; 
+/* line-height: 1.5; text-indent: 30px; letter-spacing: 2.7px; padding-right: 2.4rem; */
 }
 .vnizu{
-font-size: large;
+font-size: 1.6rem;
 text-indent: 30px;
-
+text-align: center;
+font-family: "Czizh"; 
+margin-right: 2rem;
+margin-top: 1rem;
 }
 .pribliz{transition: all 2s ease;
 }
