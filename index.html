@@ -24,10 +24,11 @@
 style="float: left; margin-right: 10px; shape-margin: 20px;"/>
 <img class="pribliz2" width="500px" height="200px" src="img/plitvice82.gif" alt="Нет фото" 
 style="float: right; margin-left: 10px; shape-margin: 20px;"/>
-<p class="podgrpc">Территория национального парка «Плитвицкие озёра» составляет 29482&nbsp;га, 
+<p class="podgrpc" id="podgrpc">Территория национального парка «Плитвицкие озёра» составляет 29482&nbsp;га, 
 включает в себя 16&nbsp;крупных и несколько меньших карстовых каскаднорасположенных озёр, 
 140&nbsp;водопадов, 20&nbsp;пещер и уникальный буковый и хвойный лес, сохранившийся с древнейших 
 времён. На его территории обитают медведи, волки, многие виды редких птиц и других животных.
+<button class="knopazag" onclick="mychfont()">Поменять шрифт</button><br>
 </p>    
 
 <a href="img/plitvice01.jpg" class="progressive replace"><img src="img/plitvicm01.jpg" class="preview" alt="Нет фото" /></a>  <!-- tiny.jpg is a small preview image - typically 20px width -->
@@ -52,7 +53,7 @@ style="float: right; margin-left: 10px; shape-margin: 20px;"/>
 <a href="img/plitvice20.jpg" class="progressive replace"><img src="img/plitvicm20.jpg" class="preview" alt="Нет фото" /></a> 
 <a href="img/plitvice21.jpg" class="progressive replace"><img src="img/plitvicm21.jpg" class="preview" alt="Нет фото" /></a> 
 
-<p class="vnizu">
+<p class="podgrpc" id="vnizu">
 Впервые о «Плитвицких озёрах» стало известно благодаря записям священника Доминика Вукасовича в 1777&nbsp;году. 
 Однако национальным парком эта территория стала лишь 8&nbsp;апреля 1949&nbsp;года. 
 До 1958&nbsp;года парк был недоступен для туристов и в нём были проложены только просеки (тропинки). 
@@ -64,13 +65,32 @@ style="float: right; margin-left: 10px; shape-margin: 20px;"/>
 которые, отмирая, каменеют и образуют твёрдые отложения, перекрывающие реки. Вода, постепенно 
 размывая подобные «дамбы», образует новые водопады.
 Парк расположен в гористой местности, самая высокая точка — гора Мала Капела (1280&nbsp;м).    
-С 1979&nbsp;года «Плитвицкие озёра» стали «Всемирным наследием» 
+С&nbsp;1979&nbsp;года «Плитвицкие озёра» стали «Всемирным наследием» 
 <span title="United Nations Educational, Scientific and Cultural Organization — специализированное учреждение Организации Объединённых Наций по вопросам образования, науки и культуры.">ЮНЕСКО.</span>
 </p>
 
 <h2>Подгрузка изображений - progressive</h2>
 <!-- <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js" async></script> -->
 <script src="progressive-image.js" async></script>
-    
+
+<script>
+var a;
+function mychfont()
+{
+if(a==1) {
+    document.getElementById("podgrpc").style.fontFamily = "Czizh";
+    document.getElementById("vnizu").style.fontFamily = "Czizh";
+    document.getElementById("podgrpc").style.fontSize = "26px";
+    return a=0;
+}
+else{
+    document.getElementById("podgrpc").style.fontFamily = "Times New Roman";
+    document.getElementById("vnizu").style.fontFamily = "Times New Roman";
+    document.getElementById("podgrpc").style.fontSize = "24px";
+    return a=1;
+}
+}
+</script>
+
 </body>
 </html>
